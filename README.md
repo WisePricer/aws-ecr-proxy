@@ -88,6 +88,10 @@ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout default.key -out de
 Kubernetes examples contain also a health check.
 The configs can be changed to get aws_config and ssl certificates as secrets.
 
+## Health check endpoint
+
+If you are using this behind load balancer or have any other reason to check if this is alive, you can hit /status which will return a "200 OK"
+
 #### Deployment and service
 The configuration provided will require valid ssl certificates or to be behind a load balancer with valid ssl.
 
