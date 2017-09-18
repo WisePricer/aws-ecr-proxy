@@ -8,6 +8,7 @@ The container will renew the aws token every 6 hours.
 
 Variables:
 ```
+AWS_ACCOUNT   Can specify AWS ECR account to use. If missing will use default account.
 AWS_KEY
 AWS_SECRET
 REGION
